@@ -1,0 +1,17 @@
+{
+  "0": "background",
+  "1": "crack_horizontal",
+  "2": "crack_vertical",
+  "3": "crack_linear",
+  "4": "crack_web",
+  "5": "crack_block",
+  "6": "crack_edge",
+  "7": "crack_concrete",
+  "8": "pothole_dry",
+  "9": "pothole_watering",
+  "10": "patch",
+  "11": "spalling",
+  "12": "exposed_bars",
+  "13": "water_leakage",
+  "14": "efflorescence"
+}
