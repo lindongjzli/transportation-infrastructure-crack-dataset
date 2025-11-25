@@ -78,18 +78,3 @@ The following charts illustrate the proportion of annotation categories within e
 The full dataset is available for download via Google Drive.
 
 > [Download Dataset (Google Drive)](https://drive.google.com/file/d/15pi8nMlJp4P9VlVTRovpIKZLBa-pv9Bi/view?usp=drive_link)
-
----
-
-### 📝 Citation
-
-If you use this dataset in your research, please cite the following paper:
-
-```
-@article{YourName2025,
-  title={A image dataset and benchmarks for transportation infrastructure crack detection},
-  author={Linchao Li, Bangxing Li, Jiabao Xing and Bowen Du},
-  journal={Scientific data},
-  year={2025}
-}
-```
