@@ -67,7 +67,9 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 
 ### Category Distribution per Subset
 
-The following charts illustrate the proportion of annotation categories within each specific sub-dataset:![1764057054172](image/README/1764057054172.png)
+The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
+
+![1764057054172](image/README/1764057054172.png)
 
 ---
 
