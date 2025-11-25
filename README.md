@@ -4,9 +4,9 @@
 
 ## 📖 Overview
 
-This repository hosts the  **Transportation Infrastructure Crack Dataset** , the first of its kind to systematically cover multiple scenarios, granularities, and modalities.
+This repository hosts the Transportation Infrastructure Crack Dataset, a large-scale collection comprising 72,805 high-quality images across roads, bridges, and tunnels.
 
-After a rigorous cleaning process—removing duplicate, blurred, and invalid images—the final dataset comprises  **72,805 high-quality images** . To facilitate engineering-oriented applications, we propose a  **background-semantic-based stratified division method** , ensuring that models trained on this data are robust and generalizable across real-world environments.
+The dataset features 35,195 annotated instances, labeled based on a novel two-tier (coarse-to-fine) classification standard that is strictly aligned with engineering practice. Unlike traditional datasets, this collection captures infrastructure defects through diverse acquisition methods to ensure model robustness in real-world environments.
 
 ## ⚙️ Data Processing & Standardization
 
