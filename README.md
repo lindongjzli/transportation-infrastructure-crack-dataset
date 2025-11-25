@@ -69,7 +69,7 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
-![1764057054172](image/README/1764057054172.png)
+![1764058307253](images/1764058307253.png)
 
 ---
 
