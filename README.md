@@ -12,9 +12,9 @@ After a rigorous cleaning process—removing duplicate, blurred, and invalid ima
 
 To ensure the highest quality of annotations and data consistency, the following preprocessing steps were applied:
 
-* **Resolution Standardization:** All images were resized to a uniform resolution of **640×640 pixels**^1^.
-* **Data Balancing:** We addressed the "long-tail" problem to ensure balanced training. **Categories with annotation counts less than ****10%** of the most frequent category were excluded from the subsets^2^.
-* **Cleaning:** Rigorous removal of invalid data (blurred or duplicate images)^3^.
+* **Resolution Standardization:** All images were resized to a uniform resolution of **640×640 pixels**.
+* **Data Balancing:** We addressed the "long-tail" problem to ensure balanced training. **Categories with annotation counts less than ****10%** of the most frequent category were excluded from the subsets.
+* **Cleaning:** Rigorous removal of invalid data (blurred or duplicate images).
 
 ## 📊 Dataset Statistics
 
@@ -22,24 +22,22 @@ To ensure the highest quality of annotations and data consistency, the following
 
 The table below details the distribution of crack categories, including box counts and small object ratios.
 
-| **Primary Category** | **Subclass Name** | **Label Name** | **Box Count** | **Image Count** | **Small Object Ratio** | **Avg. Boxes/Image** |
-| -------------------------- | ----------------------- | -------------------- | ------------------- | --------------------- | ---------------------------- | -------------------------- |
-| **Crack**            | Network Crack           | `crack_web`        | 1,516               | 1,411                 | 0%                           | 1.07                       |
-|                            | Block Crack             | `crack_block`      | 964                 | 961                   | 0%                           | 1.00                       |
-|                            | Horizontal Crack        | `crack_horizontal` | 4,292               | 3,403                 | 24.4%                        | 1.26                       |
-|                            | Vertical Crack          | `crack_vertical`   | 4,128               | 3,307                 | 24.9%                        | 1.25                       |
-|                            | Edge Crack              | `crack_edge`       | 1,277               | 1,176                 | 7.8%                         | 1.09                       |
-|                            | Linear/Irregular        | `crack_linear`     | 1,457               | 1,417                 | 0.4%                         | 1.03                       |
-| **Conc. Wall Crack** | Concrete Crack          | `crack_concrete`   | 1,906               | 1,407                 | 13.6%                        | 1.35                       |
-| **Patch**            | Patch                   | `patch`            | 1,975               | 1,679                 | 5.9%                         | 1.18                       |
-| **Pothole**          | Dry Pothole             | `pothole_dry`      | 2,501               | 1,888                 | 35.2%                        | 1.33                       |
-|                            | Water Pothole           | `pothole_watering` | 4,920               | 1,510                 | 41.3%                        | 3.26                       |
-| **Spalling**         | Spalling                | `spalling`         | 2,814               | 1,781                 | 16.2%                        | 1.58                       |
-| **Exposed Bars**     | Exposed Bars            | `exposed_bars`     | 5,033               | 1,548                 | 68.5%                        | 3.25                       |
-| **Water Leakage**    | Water Leakage           | `water_leakage`    | 1,216               | 1,066                 | 3.9%                         | 1.14                       |
-| **Efflorescence**    | Efflorescence           | `efflorescence`    | 1,196               | 525                   | 19.6%                        | 2.28                       |
-
-^4^
+| **Primary Category**     | **Subclass Name** | **Label Name** | **Box Count** | **Image Count** | **Small Object Count** | **Avg. Boxes/Image** | Small Object Ratio |
+| ------------------------------ | ----------------------- | -------------------- | ------------------- | --------------------- | ---------------------------- | -------------------------- | ------------------ |
+| **Crack**                | Network Crack           | `crack_web`        | 1,516               | 1,411                 | 0                            | 1.07                       | 0%                 |
+|                                | Block Crack             | `crack_block`      | 964                 | 961                   | 0                            | 1.00                       | 0%                 |
+|                                | Horizontal Crack        | `crack_horizontal` | 4,292               | 3,403                 | 1046                         | 1.26                       | 24.4%              |
+|                                | Vertical Crack          | `crack_vertical`   | 4,128               | 3,307                 | 1027                         | 1.25                       | 24.9%              |
+|                                | Edge Crack              | `crack_edge`       | 1,277               | 1,176                 | 99                           | 1.09                       | 7.8%               |
+|                                | Linear/Irregular        | `crack_linear`     | 1,457               | 1,417                 | 6                            | 1.03                       | 0.4%               |
+| **Concrete Wall Crack** | Concrete Crack          | `crack_concrete`   | 1,906               | 1,407                 | 259                          | 1.35                       | 13.6%              |
+| **Patch**                | Patch                   | `patch`            | 1,975               | 1,679                 | 117                          | 1.18                       | 5.9%               |
+| **Pothole**              | Dry Pothole             | `pothole_dry`      | 2,501               | 1,888                 | 880                          | 1.33                       | 35.2%              |
+|                                | Water Pothole           | `pothole_watering` | 4,920               | 1,510                 | 2035                         | 3.26                       | 41.3%              |
+| **Spalling**             | Spalling                | `spalling`         | 2,814               | 1,781                 | 455                          | 1.58                       | 16.2%              |
+| **Exposed Bars**         | Exposed Bars            | `exposed_bars`     | 5,033               | 1,548                 | 3448                         | 3.25                       | 68.5%              |
+| **Water Leakage**        | Water Leakage           | `water_leakage`    | 1,216               | 1,066                 | 48                           | 1.14                       | 3.9%               |
+| **Efflorescence**        | Efflorescence           | `efflorescence`    | 1,196               | 525                   | 234                          | 2.28                       | 19.6%              |
 
 ---
 
@@ -49,14 +47,14 @@ The table below details the distribution of crack categories, including box coun
 
 Traditional methods typically employ a simple random split (e.g., 6:2:2 or 8:2). However, we argue that:
 
-> Conventional approaches focus solely on data volume balance, neglecting the **semantic heterogeneity** inherent in infrastructure crack scenarios. **This leads to evaluation bias. **^5^
+> Conventional approaches focus solely on data volume balance, neglecting the **semantic heterogeneity** inherent in infrastructure crack scenarios. **This leads to evaluation bias.
 
 ### Proposed Method: Stratified Scenario Division
 
 To comprehensively assess model robustness, we implemented a  **background-semantic-based stratified dataset division method** :
 
 1. **Scenario Isolation:** The dataset is first divided into four distinct scenario-based subsets.
-2. **Balanced Allocation:** Within each subset, a stratified **8:2 split** is performed. **This balances training efficiency with evaluation reliability while preserving the independence of data distributions across scenarios**^6^^6^^6^^6^.
+2. **Balanced Allocation:** Within each subset, a stratified **8:2 split** is performed. **This balances training efficiency with evaluation reliability while preserving the independence of data distributions across scenarios**.
 
 ### Partition Overview
 
@@ -67,13 +65,11 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 | **Dynamic Vehicle**   | `DV`                  | Primary / Subclass               | 15,783                 | 3,945                    | 22,580          |
 | **Dynamic Aerial**    | `DA`                  | Primary / Subclass               | 1,573                  | 393                      | 1,966           |
 
-^7^
-
 ### Category Distribution per Subset
 
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
-**(Note: Figure 9 from the original document serves as the visual reference here. **^8^^8^^8^^8^)
+![1764056011982](image/README/1764056011982.png)
 
 ---
 
@@ -81,7 +77,7 @@ The following charts illustrate the proportion of annotation categories within e
 
 The full dataset is available for download via Google Drive.
 
-> [Download Dataset (Google Drive)](https://drive.google.com/file/d/15pi8nMlJp4P9VlVTRovpIKZLBa-pv9Bi/view?usp=drive_link)^9^
+> [Download Dataset (Google Drive)](https://drive.google.com/file/d/15pi8nMlJp4P9VlVTRovpIKZLBa-pv9Bi/view?usp=drive_link)
 
 ---
 
@@ -92,14 +88,10 @@ If you use this dataset in your research, please cite the following paper:
 **代码段**
 
 ```
-@article{YourName2024,
-  title={Transportation Infrastructure Crack Dataset Description},
-  author={Author Names},
-  journal={Journal Name},
-  year={2024}
+@article{YourName2025,
+  title={A image dataset and benchmarks for transportation infrastructure crack detection},
+  author={Linchao Li, Bangxing Li, Jiabao Xing and Bowen Du},
+  journal={Scientific data},
+  year={2025}
 }
 ```
-
-### 💡 Next Steps for You
-
-**Would you like me to generate a Python script (`dataloader.py`) specifically tailored to this directory structure (CS, CTS, DV, DA) to help users quickly load this dataset?**
