@@ -1,6 +1,6 @@
 # Transportation Infrastructure Crack Dataset
 
-> A comprehensive, multi-scenario, and multi-modality dataset designed for robust infrastructure defect detection.
+> A comprehensive and multi-scenario dataset designed for robust infrastructure defect detection.
 
 ## 📖 Overview
 
@@ -13,7 +13,7 @@ After a rigorous cleaning process—removing duplicate, blurred, and invalid ima
 To ensure the highest quality of annotations and data consistency, the following preprocessing steps were applied:
 
 * **Resolution Standardization:** All images were resized to a uniform resolution of **640×640 pixels**.
-* **Data Balancing:** We addressed the "long-tail" problem to ensure balanced training. **Categories with annotation counts less than ****10%** of the most frequent category were excluded from the subsets.
+* **Data Balancing:** We addressed the "long-tail" problem to ensure balanced training. Categories with annotation counts less than **10%** of the most frequent category were excluded from the subsets.
 * **Cleaning:** Rigorous removal of invalid data (blurred or duplicate images).
 
 ## 📊 Dataset Statistics
@@ -69,7 +69,7 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
-![Proportion of annotation categories in each sub-dataset](image/Proportion of annotation categories in each sub-dataset.png)
+![image](https://github.com/lindongjzli/transportation-infrastructure-crack-dataset/blob/master/image/Proportion%20of%20annotation%20categories%20in%20each%20sub-dataset.png)
 
 ---
 
