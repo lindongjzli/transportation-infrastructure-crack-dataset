@@ -69,7 +69,7 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
-![1764058307253](images/1764058307253.png)
+![Proportion of annotation categories in each sub-dataset](image/Proportion of annotation categories in each sub-dataset.png)
 
 ---
 
@@ -84,8 +84,6 @@ The full dataset is available for download via Google Drive.
 ### 📝 Citation
 
 If you use this dataset in your research, please cite the following paper:
-
-**代码段**
 
 ```
 @article{YourName2025,
