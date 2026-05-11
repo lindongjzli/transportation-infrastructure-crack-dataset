@@ -16,6 +16,12 @@ To ensure the highest quality of annotations and data consistency, the following
 * **Data Balancing:** We addressed the "long-tail" problem to ensure balanced training. Categories with annotation counts less than **10%** of the most frequent category were excluded from the subsets.
 * **Cleaning:** Rigorous removal of invalid data (blurred or duplicate images).
 
+## 📥 Download
+
+The full dataset is available for download via Google Drive.
+
+> [Download Dataset (Google Drive)](https://drive.google.com/file/d/15pi8nMlJp4P9VlVTRovpIKZLBa-pv9Bi/view?usp=drive_link)
+
 ## 📊 Dataset Statistics
 
 ### Subclass-Level Annotations
@@ -72,9 +78,3 @@ The following charts illustrate the proportion of annotation categories within e
 ![image](https://github.com/lindongjzli/transportation-infrastructure-crack-dataset/blob/master/image/Proportion%20of%20annotation%20categories%20in%20each%20sub-dataset.png)
 
 ---
-
-## 📥 Download
-
-The full dataset is available for download via Google Drive.
-
-> [Download Dataset (Google Drive)](https://drive.google.com/file/d/15pi8nMlJp4P9VlVTRovpIKZLBa-pv9Bi/view?usp=drive_link)
