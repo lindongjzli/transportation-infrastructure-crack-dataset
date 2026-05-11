@@ -49,13 +49,6 @@ The table below details the distribution of crack categories, including box coun
 
 ## 🔀 Dataset Splitting Methodology
 
-### The Philosophy: Why not Random Split?
-
-Traditional methods typically employ a simple random split (e.g., 6:2:2 or 8:2). However, we argue that:
-
-> Conventional approaches focus solely on data volume balance, neglecting the **semantic heterogeneity** inherent in infrastructure crack scenarios. **This leads to evaluation bias.
-
-### Proposed Method: Stratified Scenario Division
 
 To comprehensively assess model robustness, we implemented a  **background-semantic-based stratified dataset division method** :
 
@@ -76,5 +69,3 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
 ![image](https://github.com/lindongjzli/transportation-infrastructure-crack-dataset/blob/master/image/Proportion%20of%20annotation%20categories%20in%20each%20sub-dataset.png)
-
----
