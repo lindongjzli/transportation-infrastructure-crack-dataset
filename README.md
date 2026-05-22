@@ -4,9 +4,13 @@
 
 ## 📖 Overview
 
-This repository hosts the Transportation Infrastructure Crack Dataset, a large-scale collection comprising 72,805 high-quality images across roads, bridges, and tunnels.
+This repository hosts the Transportation Infrastructure Crack Dataset. It contains **72,805 high‑quality images** with **35,195 annotated instances** across 14 fine‑grained defect categories.  
 
-The dataset features 35,195 annotated instances, labeled based on a novel two-tier (coarse-to-fine) classification standard that is strictly aligned with engineering practice. Unlike traditional datasets, this collection captures infrastructure defects through diverse acquisition methods to ensure model robustness in real-world environments.
+**Key features:**
+- **Dual‑level classification:** coarse (primary) and fine (subclass) labels aligned with engineering standards.
+- **Four distinct scenarios:** Close‑up Static (CS), Contextual Static (CTS), Dynamic Vehicle (DV), Dynamic Aerial (DA) – enabling cross‑domain evaluation.
+- **Balanced & cleaned:** resolution standardized to 640×640, long‑tail categories removed, duplicates filtered.
+- **COCO format annotations** for easy integration with modern detection/segmentation pipelines
 
 ## ⚙️ Data Processing & Standardization
 
@@ -68,4 +72,4 @@ To comprehensively assess model robustness, we implemented a  **background-seman
 
 The following charts illustrate the proportion of annotation categories within each specific sub-dataset:
 
-![image](https://github.com/lindongjzli/transportation-infrastructure-crack-dataset/blob/master/image/Proportion%20of%20annotation%20categories%20in%20each%20sub-dataset.png)
+![image](image/figure1.png)
