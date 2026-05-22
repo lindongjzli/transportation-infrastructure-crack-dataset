@@ -12,7 +12,7 @@ This repository hosts the Transportation Infrastructure Crack Dataset. It contai
 - **Balanced & cleaned:** resolution standardized to 640×640, long‑tail categories removed, duplicates filtered.
 - **COCO format annotations** for easy integration with modern detection/segmentation pipelines
 
-![Examples of experimental data](data/JPEGImages/examples.png)
+![Examples of experimental data](data/JPEGImages/example.png)
 
 ## ⚙️ Data Processing & Standardization
 
